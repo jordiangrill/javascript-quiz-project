@@ -20,9 +20,26 @@ class Quiz {
     }
 
     checkAnswer(answer) {
-        if (this.getQuestion().answer === answer) {
+  //      if (this.getQuestion().correctAnswers === answer) {
             this.correctAnswers++
         }
-    }
-    // 6. hasEnded()
+    
+     hasEnded(){
+
+        if(this.currentQuestionIndex<this.questions.length){
+            return false;
+        }
+        if(this.currentQuestionIndex==this.questions.length){
+            return true;
+        }
 }
+
+}
+
+const newQuiz = new Quiz('what is your fav sport',2,1)
+
+console.log(newQuiz.checkAnswer('reading'));
+//console.log(newQuiz.hasEnded());
+//console.log(newQuiz.shuffleQuestions());
+//console.log(newQuiz.moveToNextQuestion());
+//console.log(newQuiz.getQuestion());
