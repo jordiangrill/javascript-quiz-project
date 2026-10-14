@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Shuffle the quiz questions
   quiz.shuffleQuestions();
 
-
+console.log(quiz.shuffleQuestions());
   /************  SHOW INITIAL CONTENT  ************/
 
   // Convert the time remaining in seconds to minutes and seconds, and pad the numbers with zeros if needed
@@ -172,3 +172,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   
 });
+
