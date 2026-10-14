@@ -78,7 +78,7 @@ console.log(quiz.shuffleQuestions());
 
   function showQuestion() {
     // If the quiz has ended, show the results
-    if (quiz.hasEnded()) {
+    if (quiz.hasEnded(questions)) {
       showResults();
       return;
     }
@@ -98,6 +98,7 @@ console.log(quiz.shuffleQuestions());
     //
     // 1. Show the question
     // Update the inner text of the question container element and show the question text
+    questionContainer.innerText = question.text;
 
     
     // 2. Update the green progress bar
@@ -172,4 +173,3 @@ console.log(quiz.shuffleQuestions());
   }
   
 });
-
